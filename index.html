@@ -76,6 +76,15 @@
   </style>
 </head>
 
+<script>
+  const password = "kpi2026";
+
+  let userPassword = prompt("Enter password to access this page:");
+  if (userPassword !== password) {
+    document.body.innerHTML = "<h1>Wrong password</h1>";
+  }
+</script>
+  
 <body>
   <div class="container">
     <h1>Forest Festival</h1>
