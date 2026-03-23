@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Babetterie 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      background: url('background.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.65);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #ffd166;
+      text-decoration: none;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background: #ffd166;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #ffb703;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Forest Festival</h1>
+    
+    <div class="info">
+      <p>July 20–22</p>
+      <p>3 days of music, food and friends.</p>
+      <p><a href="#">Location</a> | <a href="#">Lineup</a></p>
+    </div>
+
+    <form action="https://formspree.io/f/YOUR_ID" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+
+      <label>Are you coming?</label>
+      <select name="coming">
+        <option>Yes</option>
+        <option>No</option>
+        <option>Maybe</option>
+      </select>
+
+      <label>Do you want to be staff?</label>
+      <select name="staff">
+        <option>No</option>
+        <option>Yes</option>
+      </select>
+
+      <button type="submit">Send RSVP</button>
+    </form>
+
+    <div class="footer">
+      Contact: you@email.com
+    </div>
+  </div>
+</body>
+</html>
