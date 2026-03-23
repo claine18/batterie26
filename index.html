@@ -26,23 +26,28 @@
   }
 
   a {
-    color: #8eff70;
+    /* color: #8eff70; */
     text-decoration: none;
   }
+
+  a.green {
+  color: #8eff70;                  /* fallback color */
+  -webkit-text-fill-color: #8eff70; /* force font fill in WebKit browsers */
+  text-decoration: none;
+  font-size: 20px;
+  }
+
+  a.green:hover {
+  -webkit-text-fill-color: #aaff99;
+  color: #aaff99;                  /* fallback */
+  text-decoration: underline;
+}
 
   .big {
     font-size: 28px;
     color: #c8c8ff;
   }
   
-  a.green {
-  color: #8eff70;
-}
-
-  a:green:hover {
-    color:aaff99;
-    text-decoration: underline;
-  }
 
   input, select, button {
     background: black;
@@ -69,13 +74,13 @@
 
 <h1>BABETTERIE 2026</h1>
 
-<span class="big"> 14-15-16 AOUT </span><br>
-MUSIC / DANCE / ATELIERS<br>
+14-15-16 AOUT <br>
+MUSIC / DANCE / ATELIERS<br> <br>
 <a class="green" href="https://maps.app.goo.gl/4o1uAt9axGkgtMzc7" target="_blank">LOCATION</a><br>
 <a class="green" href="#">LINEUP</a>
 
 <div class="section">
-RSVP<br>
+<span class="big"> RSVP</span><br>
 <form action="https://formspree.io/f/YOUR_ID" method="POST">
   NAME<br>
   <input type="text" name="name"><br><br>
