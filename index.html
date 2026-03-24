@@ -1,110 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="robots" content="noindex">
-<meta charset="UTF-8">
-<title>Babetterie 2026</title>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babetterie 2026</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@300;400;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-  body {
-    background: black;
-    color: #a0a0c0;
-    font-family: 'Bitcount Prop Single Ink', serif;
-    font-size: 20px;
-    margin: 30px;
-    line-height: 1.4;
-  }
-
-  h1 {
-    font-size: 38px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: #c8c8ff;
-    margin-bottom: 20px;
-  }
-
-  a {
-    /* color: #8eff70; */
-    text-decoration: none;
-  }
-
-  a.green {
-  color: #8eff70;                  /* fallback color */
-  -webkit-text-fill-color: #8eff70; /* force font fill in WebKit browsers */
-  text-decoration: none;
-  font-size: 20px;
-  }
-
-  a.green:hover {
-  -webkit-text-fill-color: #aaff99;
-  color: #aaff99;                  /* fallback */
-  text-decoration: underline;
-}
-
-  .big {
-    font-size: 28px;
-    color: #c8c8ff;
-  }
-  
-
-  input, select, button {
-    background: black;
-    color: #c0c0ff;
-    border: 1px solid #333;
-    font-family: 'Bitcount Prop Single Ink', serif;
-    font-size: 18px;
-    margin-top: 4px;
-  }
-
-  button {
-    cursor: pointer;
-    margin-top: 10px;
-  }
-
-
-  .section {
-    margin-top: 22px;
-  }
-</style>
 </head>
-
 <body>
+    <h2>BABETTERIE 2026</h2>
 
-<h1>BABETTERIE 2026</h1>
+    14-15-16 AOUT <br>
+    MUSIC / DANCE / ATELIERS<br> <br>
 
-14-15-16 AOUT <br>
-MUSIC / DANCE / ATELIERS<br> <br>
-<a class="green" href="https://maps.app.goo.gl/4o1uAt9axGkgtMzc7" target="_blank">LOCATION</a><br>
-<a class="green" href="#">LINEUP</a>
-
-<div class="section">
-<span class="big"> RSVP</span><br>
-<form action="https://formspree.io/f/YOUR_ID" method="POST">
-  NAME<br>
-  <input type="text" name="name"><br><br>
-
-  ARE YOU COMING<br>
-  <select name="coming">
-    <option>YES</option>
-    <option>NO</option>
-    <option>MAYBE</option>
-  </select><br><br>
-
-  DO YOU WANT TO BE STAFF<br>
-  <select name="staff">
-    <option>NO</option>
-    <option>YES</option>
-  </select><br><br>
-
-  <button type="submit">SEND</button>
-</form>
-</div>
-
-<div class="section">
-CONTACT: you@email.com
-</div>
-
+    <p id="readyLabel"> Are you ready ? <br> </p>
+    <div class="options">
+        <a href="rsvp.html" >
+            <button class="btn-yes" type="button">YES</button>
+        </a>
+        <!-- <span class="no-button">NO</span> -->
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

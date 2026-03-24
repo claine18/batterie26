@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you ready?</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <button id="langToggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+
+  <h1 id="dates">14-15-16 AOUT</h1>
+
+<!-- <div class="intro">
+
+    <p>
+      More info:
+      <a class="green" href="https://maps.app.goo.gl/4o1uAt9axGkgtMzc7" target="_blank">Location</a>
+      · <a class="green" href="lineup.html">Lineup</a>
+      · <a class="green" href="tickets.html">Tickets</a>
+    </p>
+
+    <p>Need help? Contact <a class="green" href="mailto:you@email.com">you@email.com</a></p>
+  </div> -->
+
+<div class="left-page">
+<p id="tagline" class="lead">En 2026, la BBTR revient en force. Prépare toi pour trois jours 
+    d'ateliers, DJ sets et concert live. </p>
+
+<p class="divider">------------------------------------------------------------------------------------------</p>
+
+  <p id="locationLine">
+    <span id="locationPrefix">🧚 RDV à</span>
+    <a id="locationLink" class="green" href="https://maps.app.goo.gl/4o1uAt9axGkgtMzc7" target="_blank">Belhade</a>
+    <span id="locationSuffix">, accessible en voiture ou gare la + proche </span>
+    <a id="stationLink" class="green" href="https://www.sncf-connect.com/train/france/nouvelle-aquitaine/ychoux" target="_blank">Ychoux</a>
+  </p>
+<p id="priceLine"> 🌾 80 € - food, drinks et music </p>
+<p id="campingLine">🦉 Camping sur place (apporte ta tente) </p>
+
+<p class="divider">------------------------------------------------------------------------------------------</p>
+
+  <form id="rsvpForm" onsubmit="return false;">
+    <label id="nameLabel" for="name">Ton nom:</label><br>
+    <input type="text" id="name" name="name" autocomplete="name"><br><br>
+
+    <label id="comingLabel">Tu viens?</label><br>
+    <div class="options" style="margin-top:8px;">
+      <button id="yesBtn" class="btn-yes" type="button" aria-pressed="false">YES</button>
+      <button id="noBtn" class="btn-no" type="button" aria-pressed="false" style="margin-left:10px;">NO</button>
+    </div>
+
+    <p id="rsvpMsg" style="color:#ffdddd; display:none; margin-top:12px;"></p>
+    <p id="noMsg" class="fallback-text" aria-live="polite" style="display:none; margin-top:8px;">:((( — message recu!</p>
+  </form>
+</div>
+  
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thanks</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <h1></h1>
+
+  <div class="left-page">
+    <p id="thanksMsg" class="lead">...</p>
+    <p id="summary" style="margin-top:12px;"></p>
+    <p style="margin-top:16px;"><a class="green" href="index.html">Back to home</a></p>
+  </div>
+
+  <script>
+    (function () {
+      var name = localStorage.getItem('rsvp_name') || '';
+      var coming = localStorage.getItem('rsvp_coming') || '';
+      var staff = localStorage.getItem('rsvp_staff') || '';
+      var perform = localStorage.getItem('rsvp_perform') || '';
+
+      var msgEl = document.getElementById('thanksMsg');
+      var summaryEl = document.getElementById('summary');
+
+      if (coming === 'no') {
+        msgEl.textContent = ':(((';
+        summaryEl.innerHTML = name
+          ? ('Answer saved for: <strong>' + name + '</strong><br>Coming: NO')
+          : 'Coming: NO';
+    } else {
+        msgEl.textContent = "🥰🥰🥰🥰🥰 Can't wait !!!!";
+        summaryEl.innerHTML = name
+          ? ('Answer saved for: <strong>' + name + '</strong><br>Coming: ' + coming.toUpperCase() + '<br>Staff: ' + (staff || 'N/A').toUpperCase() + '<br>Perform/workshop: ' + (perform || 'N/A').toUpperCase())
+          : '';
+      }
+    })();
+  </script>
+</body>
+</html>
+

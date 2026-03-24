@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Details</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button id="langToggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+
+  <h1 id="detailsTitle">Quelques questions</h1>
+
+  <div class="left-page">
+    <p id="welcomeName" class="lead"></p>
+
+    <!-- Update action to your Formspree id -->
+    <form id="detailsForm" action="#" method="POST">
+      <input type="hidden" name="name" id="hiddenName">
+      <input type="hidden" name="coming" id="hiddenComing" value="yes">
+
+      <label id="staffLabel" for="staff">Do you want to be staff (help for one week before and 2 days after, discounted tickets and amazing vibes)?</label><br>
+      <select id="staff" name="staff" required>
+        <option value="no">NO</option>
+        <option value="yes">YES</option>
+      </select><br><br>
+
+      <label id="performLabel" for="perform">Do you want to perform or make a workshop?</label><br>
+      <select id="perform" name="perform" required>
+        <option value="no">NO</option>
+        <option value="yes">YES</option>
+      </select><br><br>
+
+      <button id="submitBtn" type="submit" class="btn-yes">Submit</button>
+      <p id="detailsMsg" style="display:none;color:#ffdddd;margin-top:12px;"></p>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
