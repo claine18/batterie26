@@ -127,12 +127,17 @@ hr.divider {
   height: 1px;
   width: 100%;
   box-sizing: border-box;
+  padding: 10px 24px;
+    font-size: 18px;
+    font-family: 'Bitcount Prop Single Ink', serif;
+    border-radius: 6px;                /* rectangular with slightly rounded corners */
 }
 
 /* general button styling and responsive spacing */
 button.btn-no {
   display: inline-block;
   background-color: transparent;
+  border: 2px solid black;        
   color: #c8c8ff;
   padding: 10px 20px;
   font-size: 18px;
@@ -172,14 +177,22 @@ button:disabled { opacity: 0.6; cursor: default; }
 
   .btn-yes, .btn-no { padding: 12px; }
 
+  /* Remove any left margin from buttons (overrides inline styles) so stacked buttons align */
+  .options button { margin-left: 0 !important; }
+
+  /* ensure button text is centered when full-width */
+  .options button { text-align: center; }
+
   /* keep the language toggle visible on small screens */
   .lang-toggle {
-    top: 8px;
-    right: 8px;
-    padding: 6px 8px;
+    /* make the toggle part of the normal flow on small screens so it sits below the title */
+    position: static;
+    display: block;
+    margin: 10px auto 0;
+    padding: 6px 10px;
     font-size: 14px;
-    z-index: 100000; /* ensure it sits above other elements */
-    display: inline-block;
+    z-index: 100000; /* ensure it sits above other elements when needed */
+    text-align: center;
   }
 }
 
