@@ -201,3 +201,12 @@ button:disabled { opacity: 0.6; cursor: default; }
   body { font-size: 18px; margin: 18px auto; }
   .left-page { max-width: 640px; }
 }
+
+.center-image {
+  display: block;      /* makes margin auto work */
+  margin: 18px auto;   /* centers horizontally and gives vertical space */
+  max-width: 100%;     /* responsive: never wider than container */
+  height: auto;        /* keep aspect ratio */
+  width: 400px;        /* suggested default width — adjust or remove as desired */
+  border-radius: 6px;  /* optional styling */
+}
