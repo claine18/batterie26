@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     en: {
       siteTitle: 'BABETTERIE 2026',
       dates: '14-15-16 AUG',
-      tagline: 'It is official! In 2026, the BBTR makes its great come back and the babette are so excited to host you. On the menu : DJs sets, live band, workshops, fresh beers, foodtrucks, and mostly you and your best dance moves.',
+      tagline: 'It is official! In 2026, the BBTR makes its great come back, the babettes are so excited to host you. On the menu : DJs sets, live band, workshops, fresh beers, foodtrucks, but above all you and your best dance moves.',
       locationPrefix: '🧚 We meet in',
       locationPlace: 'Belhade',
       locationHref: 'https://maps.app.goo.gl/4o1uAt9axGkgtMzc7',
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fr: {
       siteTitle: 'BABETTERIE 2026',
       dates: '14-15-16 AOUT',
-      tagline: "C'est officiel ! En 2026, la BBTR revient en force et les babette ont trop hate de vous accueillir. Au programme du kiff : DJs sets, live band, ateliers, bières fraîches, foodtrucks, et surtout vous la team.",
+      tagline: "C'est officiel ! En 2026, la BBTR revient en force, les babettes ont tellement hâte de vous accueillir. Au programme du kiff : DJs sets, live band, ateliers, bières fraîches, foodtrucks, et surtout vous la team.",
       locationPrefix: '🧚 RDV à ',
      locationHref: 'https://maps.app.goo.gl/4o1uAt9axGkgtMzc7',
      locationSuffix: ', accessible en voiture ou gare la + proche ',
